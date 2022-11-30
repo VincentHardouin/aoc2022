@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest ./days",
-    "generate:day": "plop day"
+    "generate:day": "plop day",
+    "get:input": "node scripts/get-day-input"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
