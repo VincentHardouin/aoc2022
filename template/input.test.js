@@ -1,4 +1,4 @@
-const { describe, it, expect } = require('jest');
+const { describe, it, expect } = require('@jest/globals');
 const input = require('./input');
 
 describe('day{{day}} | input', () => {
