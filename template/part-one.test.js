@@ -1,10 +1,14 @@
 const { describe, it, expect } = require('@jest/globals');
 const partOne = require('./part-one');
+const { parseInputString } = require('./input');
 
 describe('day{{day}} | part-one', () => {
   describe('#getResult', () => {
     it('should ', () => {
-      const result = partOne.getResult();
+      const inputString = ``;
+      const input = parseInputString(inputString);
+
+      const result = partOne.getResult(input);
 
       expect(result).toBe();
     });
