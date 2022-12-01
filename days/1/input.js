@@ -6,9 +6,9 @@ function getInput() {
     .readFileSync(path.join(__dirname, 'input.txt'), 'utf8')
     .toString()
     .trim()
-    .split('\n')
-    .map((value) => {
-      return value;
+    .split('\n\n')
+    .map((elf) => {
+      return elf.split('\n').map((cal) => parseInt(cal,10));
     });
 }
 
