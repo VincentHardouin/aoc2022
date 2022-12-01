@@ -11,7 +11,16 @@ npm install
 ## Usage
 ### Initialize a day
 ```shell
-plop day <day:number>
+npm run generate:day <day:number>
+```
+
+### Get day input
+It's save input in days/<day:number>/input.txt
+
+Required `SESSION=<session-id>` in `.env` file
+
+```shell
+npm run get:input <day:number>
 ```
 
 ### Run tests
