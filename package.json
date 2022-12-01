@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "yargs":  "^17.6.2",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
