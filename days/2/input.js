@@ -10,7 +10,8 @@ function parseInputString(input) {
     .trim()
     .split('\n')
     .map((value) => {
-      return value;
+      const [opponent, me] = value.split(' ');
+      return { opponent, me };
     });
 }
 
