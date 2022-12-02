@@ -5,12 +5,14 @@ const { parseInputString } = require('./input');
 describe('day2 | part-two', () => {
   describe('#getResult', () => {
     it('should ', () => {
-      const inputString = ``;
+      const inputString = `A Y
+B X
+C Z`;
       const input = parseInputString(inputString);
 
       const result = partTwo.getResult(input);
 
-      expect(result).toBe();
+      expect(result).toBe(12);
     });
   });
 });
