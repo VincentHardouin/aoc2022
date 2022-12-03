@@ -1,7 +1,7 @@
 const { describe, it, expect } = require('@jest/globals');
 const partTwo = require('./part-two');
 const { parseInputString } = require('./input');
-const partOne = require("./part-one");
+const partOne = require('./part-one');
 
 describe('day3 | part-two', () => {
   describe('#getResult', () => {

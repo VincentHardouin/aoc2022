@@ -8,7 +8,7 @@ function getInput() {
     .trim()
     .split('\n\n')
     .map((elf) => {
-      return elf.split('\n').map((cal) => parseInt(cal,10));
+      return elf.split('\n').map((cal) => parseInt(cal, 10));
     });
 }
 

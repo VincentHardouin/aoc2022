@@ -36,12 +36,9 @@ function getShape(playerShapeCode) {
   return SHAPES[playerShapeCode];
 }
 
-
 function isWin(shape1, shape2) {
   return RULES[shape1].winAgainst === shape2;
 }
-
-
 
 module.exports = {
   getResult,

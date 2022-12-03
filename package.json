@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest ./days",
+    "lint": "eslint .",
     "generate:day": "plop day",
     "get:input": "node scripts/get-day-input"
   },
