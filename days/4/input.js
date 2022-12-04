@@ -10,7 +10,10 @@ function parseInputString(input) {
     .trim()
     .split('\n')
     .map((value) => {
-      return value;
+      return value.split(',').map((s) => {
+        const [min, max] = s.split('-').map((v) => Number(v));
+        return { min, max };
+      });
     });
 }
 
