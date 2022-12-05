@@ -8,22 +8,20 @@ function getInput() {
 
 function parseInputString(input) {
   const [firstPart, secondPart] = input.split('\n\n');
-  const temp1 = firstPart
-    .split('\n')
+  let temp1 = firstPart.split('\n');
+  temp1.pop();
+  temp1 = temp1
     .map((l) => {
-      return l.replaceAll('    ', ' ').split(' ');
+      return l.split('').reduce((acc, val, index) => {
+        if (index % 4 == 1) {
+          acc.push(val);
+        }
+        return acc;
+      }, []);
     })
     .reverse();
-  temp1.shift();
-  const lineCrates = Array.from({ length: 9 }, () => []);
-  temp1.forEach((l) =>
-    l.forEach((c, i) => {
-      if (c === '') return;
-      let d = c.replace('[', '');
-      d = d.replace(']', '');
-      lineCrates[i].push(d);
-    })
-  );
+  let lineCrates = _.zip(...temp1);
+  lineCrates = lineCrates.map((line) => line.filter((a) => a !== ' '));
   const instructions = secondPart
     .trim()
     .split('\n')
