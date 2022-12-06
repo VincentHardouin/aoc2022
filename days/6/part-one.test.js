@@ -4,13 +4,22 @@ const { parseInputString } = require('./input');
 
 describe('day6 | part-one', () => {
   describe('#getResult', () => {
-    it('should ', () => {
-      const inputString = ``;
-      const input = parseInputString(inputString);
+    const testCase = [
+      { inputString: `mjqjpqmgbljsphdztnvjfqwrcgsmlb`, expectedResult: 7 },
+      { inputString: `bvwbjplbgvbhsrlpgdmjqwftvncz`, expectedResult: 5 },
+      { inputString: `nppdvjthqldpwncqszvftbrmjlhg`, expectedResult: 6 },
+      { inputString: `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg`, expectedResult: 10 },
+      { inputString: `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`, expectedResult: 11 },
+    ];
 
-      const result = partOne.getResult(input);
+    testCase.forEach(({ inputString, expectedResult }) => {
+      it(`should return ${expectedResult}`, () => {
+        const input = parseInputString(inputString);
 
-      expect(result).toBe();
+        const result = partOne.getResult(input);
+
+        expect(result).toBe(expectedResult);
+      });
     });
   });
 });

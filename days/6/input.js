@@ -6,12 +6,7 @@ function getInput() {
 }
 
 function parseInputString(input) {
-  return input
-    .trim()
-    .split('\n')
-    .map((value) => {
-      return value;
-    });
+  return input.trim().split('');
 }
 
 module.exports = {
